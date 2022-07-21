@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signin</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- MATERIAL ICON CDN -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+
+    <div class="signin-signup">
+        <form action="#" class="signin" id="signin-form">
+            <div class="notification_messages">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <h3>Kilembe Patient <br> Management System</h3>
+            <h4>Login please</h4>
+            <div class="input-box-s">
+                <span class="material-symbols-outlined">person</span>
+                <input type="text" placeholder="Username" id="signin-username">
+                <span class="material-symbols-outlined check-pass hide">visibility</span>
+            </div>
+            <div class="input-box-s">
+                <span class="material-symbols-outlined">lock</span>
+                <input type="password" placeholder="Password" id="signin-password">
+                <span class="material-symbols-outlined check-pass-code">visibility</span>
+            </div>
+            <div class="additional">
+                <label for="checkb">
+                    <span class="material-symbols-outlined" id="checkBox">check_box_outline_blank</span>
+                    <b>Remember Me</b>
+                    <input type="checkbox" id="checkb">
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">
+                <b>Signin</b>
+                <span class="material-symbols-outlined">login</span>
+            </button>
+            <p>&copy; Copyright 2022 Kilembe Hospital</p>
+        </form>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>

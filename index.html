@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kilembe Patient MIS</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- MATERIAL ICON CDN -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#">
+                <b>Kilembe</b> 
+                <small>PMS</small>
+            </a>
+            <span class="material-symbols-outlined search-btn">search</span>
+            <span class="material-symbols-outlined notifications-btn">notifications</span>
+            <div class="profile-photo">
+                <img src="./images/user.png" alt="">
+            </div>
+            <span class="material-symbols-outlined logout-btn">logout</span>
+        </div>
+    </nav>
+    <section>
+    	<div class="container">
+    		<div class="dash">
+    			<div class="box">
+    				<div class="box-head">
+		    			<b>364</b>
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">people</span>
+		    			</div>
+		    			<div class="txt">Patients</div>
+		    			<div class="footer">
+		    				<a>Management</a>
+		    			</div>
+		    		</div>
+    			</div>
+    			<div class="box">
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">biotech</span>
+		    			</div>
+		    			<div class="txt">Doctor</div>
+		    			<div class="footer">
+		    				<a>Administration</a>
+		    			</div>
+		    		</div>
+    				
+    			</div>
+    			<div class="box">
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">science</span>
+		    			</div>
+		    			<div class="txt">Lab</div>
+		    		</div>
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">flip</span>
+		    			</div>
+		    			<div class="txt">Scans</div>
+		    		</div>
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">contrast</span>
+		    			</div>
+		    			<div class="txt">X-Rays</div>
+		    		</div>
+    				
+    			</div>
+    			<div class="box">
+    				<div class="sys-users">
+    					<div class="icon">
+				            <span class="material-symbols-outlined">person</span>
+		    			</div>
+		    			<div class="txt">system users</div>
+    				</div>
+    				<div class="tabs">
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">admin_panel_settings</span>
+			    			</div>
+			    			<div class="txt">Admin</div>
+			    		</div>
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">biotech</span>
+			    			</div>
+			    			<div class="txt">Doctors</div>
+			    		</div>
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">vaccines</span>
+			    			</div>
+			    			<div class="txt">Nurses</div>
+			    		</div>
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">person</span>
+			    			</div>
+			    			<div class="txt">Receptionist</div>
+			    		</div>
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">medication</span>
+			    			</div>
+			    			<div class="txt">pharmacist</div>
+			    		</div>
+			    		<div class="tab">
+			    			<div class="icon">
+					            <span class="material-symbols-outlined">science</span>
+			    			</div>
+			    			<div class="txt">Lab Attendants</div>
+			    		</div>
+			    	</div>
+    				<div class="sys-users">
+    					<div class="icon">
+				            <span class="material-symbols-outlined">help</span>
+		    			</div>
+		    			<div class="txt">Information</div>
+    				</div>
+			    	<div class="info">
+			    		<p>Click on any of the coloured boxes to navigate to that section.</p>
+			    		<p>Warngin! Some sections have restrictions, please note to access the doctors pannel is restricted to only doctors and the admin pannel is restricted to only administrators, each user con only update his/her profile.</p>
+			    	</div>
+    			</div>
+    			<div class="box">
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">vaccines</span>
+		    			</div>
+		    			<div class="txt">Nurse</div>
+		    		</div>
+    			</div>
+    			<div class="box">
+    				<div class="box-head">
+		    			<div class="icon">
+				            <span class="material-symbols-outlined">inventory</span>
+		    			</div>
+		    			<div class="txt">Phamacy</div>
+		    		</div>
+    				
+    			</div>
+    		</div>
+    	</div>
+    	<div class="container">
+	    	<div class="tabs">
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">people</span>
+	    			</div>
+	    			<div class="txt">Patients</div>
+	    		</div>
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">vaccines</span>
+	    			</div>
+	    			<div class="txt">Treatment</div>
+	    		</div>
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">medication_liquid</span>
+	    			</div>
+	    			<div class="txt">Inventory</div>
+	    		</div>
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">vaccines</span>
+	    			</div>
+	    			<div class="txt">Nurse</div>
+	    		</div>
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">biotech</span>
+	    			</div>
+	    			<div class="txt">Doctor</div>
+	    		</div>
+	    		<div class="tab">
+	    			<div class="icon">
+			            <span class="material-symbols-outlined">group</span>
+	    			</div>
+	    			<div class="txt">Users</div>
+	    		</div>
+	    	</div>
+	    </div>
+        <div class="flip-pages">
+            <div class="container">
+                <div class="box-title">
+                    <span class="material-symbols-outlined">vaccines</span>
+                    <h3>Medicine List</h3>
+                    <button>
+                        <b>New Medicine</b>
+                        <span class="material-symbols-outlined">group_add</span>
+                    </button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label class="counter">
+                                        <span>#</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>First Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Last Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Gender</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Birth Day</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Time</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Status</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Telephone</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Date</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label class="action center">
+                                        <span>Action</span>
+                                    </label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="reservation_list">
+
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination_link reservation-list_pagination">
+                    <span>&lt;&lt;</span>  
+                    <span class="prev">&lt;</span> 
+                    <span class="active">1</span> 
+                    <span class="">2</span> 
+                    <span class="">3</span> 
+                    <span class="">4</span> 
+                    <span class="">5</span> 
+                    <span class="next">&gt;</span>
+                    <span>&gt;&gt;</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box-title">
+                    <span class="material-symbols-outlined">people</span>
+                    <h3>User List</h3>
+                    <button>
+                        <b>New User</b>
+                        <span class="material-symbols-outlined">group_add</span>
+                    </button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label class="counter">
+                                        <span>#</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>First Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Last Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Gender</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Birth Day</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Time</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Status</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Telephone</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Date</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label class="action center">
+                                        <span>Action</span>
+                                    </label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="reservation_list">
+
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination_link reservation-list_pagination">
+                    <span>&lt;&lt;</span>  
+                    <span class="prev">&lt;</span> 
+                    <span class="active">1</span> 
+                    <span class="">2</span> 
+                    <span class="">3</span> 
+                    <span class="">4</span> 
+                    <span class="">5</span> 
+                    <span class="next">&gt;</span>
+                    <span>&gt;&gt;</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box-title">
+                    <span class="material-symbols-outlined">list</span>
+                    <h3>Patient List</h3>
+                    <button>
+                        <b>New Patient</b>
+                        <span class="material-symbols-outlined">group_add</span>
+                    </button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label class="counter">
+                                        <span>#</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>First Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Last Name</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Gender</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Birth Day</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Time</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Status</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th >
+                                    <label>
+                                        <span>Telephone</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        <span>Date</span>
+                                        <span class="material-symbols-outlined">unfold_more</span>
+                                    </label>
+                                </th>
+                                <th>
+                                    <label class="action center">
+                                        <span>Action</span>
+                                    </label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="reservation_list">
+
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="white sold_item" data-page="1">
+                                <td><label class="center counter">1</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Tugume Deo</label></td>
+                                <td><label>Haircut</label></td>
+                                <td><label>09:00PM - 10:00PM</label></td>
+                                <td><label class="success">Approved</label></td>
+                                <td><label>0774657362</label></td>
+                                <td><label class="date">2022-05-09</label></td>
+                                <td>
+                                    <div class="actions">
+                                        <label class="center">
+                                            <span id="447" class="material-symbols-outlined success">print</span>
+                                        </label>
+                                        <label class="center ">
+                                            <span class="material-symbols-outlined success">edit_note</span>
+                                        </label>
+                                        <label class="center">
+                                            <span class="material-symbols-outlined success">sync</span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form class="new_patient new">
+                        <div class="heading">
+                            <h2>Enter patient details</h2>
+                        </div>
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <label>Telephone</label>
+                            <input type="text" placeholder="Telephone">
+                        </div>
+                        <div class="input-field">
+                            <label>Birthday</label>
+                            <input type="date" placeholder="Birthday">
+                        </div>
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" placeholder="Date">
+                        </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Address">
+                        </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select>
+                                <option>-- Select Gender --</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Service</label>
+                            <select>
+                                <option>-- Select Sevice --</option>
+                                <option>Consultation</option>
+                                <option>Treatement</option>
+                            </select>
+                        </div>
+
+                        <div class="action-btns">
+                            <button type="submit" class="bg-success">
+                                <span class="material-symbols-outlined">save_as</span>
+                                <b>Save</b>
+                            </button>
+                            <button type="reset" class="bg-danger">
+                                <b>Clear</b>
+                                <span class="material-symbols-outlined">sync</span>
+                            </button>
+                        </div>
+                        <div class="heading">
+                            <h2>Enter Next of Keen details</h2>
+                        </div>
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="input-field">
+                            <label>Relationship</label>
+                            <input type="text" placeholder="Relationship eg. Father">
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <label>Telephone</label>
+                            <input type="text" placeholder="Telephone">
+                        </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Address">
+                        </div>
+                        <div class="action-btns">
+                            <button type="submit" class="bg-success">
+                                <span class="material-symbols-outlined">save_as</span>
+                                <b>Save</b>
+                            </button>
+                            <button type="reset" class="bg-danger">
+                                <b>Clear</b>
+                                <span class="material-symbols-outlined">sync</span>
+                            </button>
+                        </div>                     
+                    </form>
+                </div>
+                <div class="pagination_link reservation-list_pagination">
+                    <span>&lt;&lt;</span>  
+                    <span class="prev">&lt;</span> 
+                    <span class="active">1</span> 
+                    <span class="">2</span> 
+                    <span class="">3</span> 
+                    <span class="">4</span> 
+                    <span class="">5</span> 
+                    <span class="next">&gt;</span>
+                    <span>&gt;&gt;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
